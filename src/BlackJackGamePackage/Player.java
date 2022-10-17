@@ -12,4 +12,12 @@ public class Player extends Person{
         super(name);
         this.id_player = counter++;
     }
+
+    public List<Card> getDealerCarteList() {
+        return dealerCarteList;
+    }
+
+    public void setDealerCarteList(Card card) {
+        this.dealerCarteList.add(card);
+    }
 }
