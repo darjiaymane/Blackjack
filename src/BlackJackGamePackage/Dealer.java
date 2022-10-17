@@ -14,6 +14,15 @@ public class Dealer extends Person{
         super(name);
         this.id_dealer = counter++;
     }
+    public int getId_dealer() {
+        return id_dealer;
+    }
 
+    public List<Card> getDealerCarteList() {
+        return dealerCarteList;
+    }
 
+    public void setDealerCarteList(Card card) {
+        dealerCarteList.add(card);
+    }
 }
