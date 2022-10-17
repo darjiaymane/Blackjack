@@ -6,4 +6,11 @@ public class Card {
     private int cardNumber;
     private int cardSymbole;
 
+    public Card(int cardNumber, int cardSymbole) {
+        this.id = counter++;
+        this.cardNumber = cardNumber;
+        this.cardSymbole = cardSymbole;
+    }
+
+
 }
