@@ -23,6 +23,6 @@ public class Dealer extends Person{
     }
 
     public void setDealerCarteList(Card card) {
-        dealerCarteList.add(card);
+        this.dealerCarteList.add(card);
     }
 }
