@@ -7,6 +7,13 @@ public class Dealer extends Person{
     public static int counter = 0;
 
     private int id_dealer;
-    private List<Card> dealerCarteList = new ArrayList<Card>();
+    private List<Card> dealerCarteList = new ArrayList<>();
+
+
+    public Dealer(String name) {
+        super(name);
+        this.id_dealer = counter++;
+    }
+
 
 }
