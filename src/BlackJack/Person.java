@@ -5,10 +5,10 @@ import BlackJackGamePackage.Card;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Person {
-    String name;
-    List<Card> cardList = new ArrayList<>();
-    int score;
+public abstract class Person {
+    protected String name;
+    protected List<Card> cardList = new ArrayList<>();
+    protected int score;
 
     public Person(String name, List<Card> cardList, int score) {
         this.name = name;
@@ -41,5 +41,13 @@ public class Person {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "Person:" +
+                "\n  name:'" + name + '\'' +
+                "\n  cardList:" + cardList +
+                "\n  score:" + score ;
     }
 }
